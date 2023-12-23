@@ -5,7 +5,7 @@ class LogLineParser
          def message
             # Assuming the format is always "[LOG_LEVEL]: Message"
             # Extract the message from the log line and strip it of whitespace
-            return @line.gsub(/\A\[[A-Z]+]\: /, '').strip
+            return @line.gsub(/\A\[[A-Z]+\]: /, '').strip
           end
     
 
